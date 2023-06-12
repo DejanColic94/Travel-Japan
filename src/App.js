@@ -7,6 +7,10 @@ import Destignations from './components/pages/Destignations';
 import Signup from './components/pages/Signup';
 import Footer from './components/Footer';
 
+/*
+$env:NODE_OPTIONS = "--openssl-legacy-provider"
+*/
+
 function App() {
   return (
     <>
