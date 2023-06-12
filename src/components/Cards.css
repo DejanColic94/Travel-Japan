@@ -71,10 +71,10 @@
   }
   
   .cards_item_img {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 30px;
     left: 0;
     display: block;
     width: 100%;
@@ -90,11 +90,11 @@
   }
   
   .cards_item_info {
-    padding: 20px 30px 30px;
+    padding: 40px 30px 30px;
   }
   
   .cards_item_text {
-    color: #252e48;
+    color: #5e657a;
     font-size: 18px;
     line-height: 24px;
   }

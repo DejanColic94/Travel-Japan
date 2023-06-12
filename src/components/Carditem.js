@@ -1,18 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Carditem() {
+function Carditem(props) {
     return (
         <>
             <li className="cards_item"> 
-                <Link className="cards_item_link">
-                    <figure className="cards_item_pick-wrap">
-                        <img src="/" alt="Travel" className="cards_item_img">
-
-                        </img>
+                <Link className="cards_item_link" to={props.path}>
+                    <figure className="cards_item_pick-wrap" data-category={props.label}>
+                        <img src={props.src} alt="Travel" className="cards_item_img"></img>
                     </figure>
                     <div className="cards_item_info">
-                        <h5 className="cards_item_text">d</h5>
+                        <h5 className="cards_item_text">{props.text}</h5>
                     </div>
                 </Link>
 

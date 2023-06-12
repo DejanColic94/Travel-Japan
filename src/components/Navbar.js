@@ -32,7 +32,7 @@ function Navbar() {
             <div className='navbar-container'>
               <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                 TRAVEL JAPAN
-                <i class='fas fa-globe-asia' />
+                <i className='fas fa-globe-asia' />
               </Link>
               <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
