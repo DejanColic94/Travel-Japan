@@ -19,13 +19,13 @@ function Cards() {
               src={kyoto}
               text='Kyoto : Explore the capital of feudal Japan'
               label='History'
-              path='/services'
+              path='/destignations'
             />
             <CardItem
               src={nara}
               text='Nara : The aincent setlement of the Yammato people'
               label='Luxury'
-              path='/services'
+              path='/destignations'
             />
           </ul>
           <ul className='cards__items'>
@@ -33,19 +33,19 @@ function Cards() {
               src={okinawa}
               text='Okinawa : Most beautiful beaches in Japan'
               label='Mystery'
-              path='/services'
+              path='/destignations'
             />
             <CardItem
               src={osaka}
               text='Osaka : Explore the food capital of Japan'
               label='Adventure'
-              path='/products'
+              path='/destignations'
             />
             <CardItem
               src={sapporo}
               text='Sapporo : Expirience funtimes in the snows of Hokkaido'
               label='Adrenaline'
-              path='/sign-up'
+              path='/destignations'
             />
              </ul>
             <ul className='cards__items'>
@@ -53,7 +53,7 @@ function Cards() {
               src={tokyo}
               text='Tokyo : Welcome to the biggest city on the planet'
               label='Night life'
-              path='/services'
+              path='/destignations'
             />
           </ul>
         </div>
