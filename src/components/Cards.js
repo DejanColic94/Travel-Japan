@@ -1,39 +1,65 @@
 import React from 'react';
-import Carditem from './Carditem';
-import './Cards.css'
-import Kyoto from '../images/kyoto.jpg';
-import Nara from '../images/nara.jpg';
-import Osaka from '../images/osaka.jpg';
-
+import './Cards.css';
+import CardItem from './Carditem';
+import kyoto from '../images/kyoto.jpg';
+import nara from '../images/nara.jpg';
+import okinawa from '../images/okinawa.jpg';
+import osaka from '../images/osaka.jpg';
+import sapporo from '../images/sapporo.jpg';
+import tokyo from '../images/tokyo.jpg';
 
 function Cards() {
-    return (
-        <div className="cards">
-            <h1>Check out these spots!</h1>
-            <div className="cards_container">
-                <div className="cards_wrapper">
-                    <ul className="card_items">
-                        <Carditem 
-                        src = {Kyoto}
-                        text = "Kyoto, the old capital and the center of feudal Japan"
-                        label = "adventure"
-                        path = "/destignations" />
-                         <Carditem 
-                        src = {Nara}
-                        text = "Nara, the first capital, and the biggest setlement of Yammato people"
-                        label = "adventure"
-                        path = "/destignations" />
-                         <Carditem 
-                        src = {Osaka}
-                        text = "Osaka, the food capital of modern Japan"
-                        label = "adventure"
-                        path = "/destignations" />
-                    </ul>
-                    
-                </div>
-            </div>
+  return (
+    <div className='cards'>
+      <h1>Check out these EPIC Destinations!</h1>
+      <div className='cards__container'>
+        <div className='cards__wrapper'>
+          <ul className='cards__items'>
+            <CardItem
+              src={kyoto}
+              text='Kyoto : Explore the capital of feudal Japan'
+              label='History'
+              path='/services'
+            />
+            <CardItem
+              src={nara}
+              text='Nara : The aincent setlement of the Yammato people'
+              label='Luxury'
+              path='/services'
+            />
+          </ul>
+          <ul className='cards__items'>
+            <CardItem
+              src={okinawa}
+              text='Okinawa : Most beautiful beaches in Japan'
+              label='Mystery'
+              path='/services'
+            />
+            <CardItem
+              src={osaka}
+              text='Osaka : Explore the food capital of Japan'
+              label='Adventure'
+              path='/products'
+            />
+            <CardItem
+              src={sapporo}
+              text='Sapporo : Expirience funtimes in the snows of Hokkaido'
+              label='Adrenaline'
+              path='/sign-up'
+            />
+             </ul>
+            <ul className='cards__items'>
+            <CardItem
+              src={tokyo}
+              text='Tokyo : Welcome to the biggest city on the planet'
+              label='Night life'
+              path='/services'
+            />
+          </ul>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default Cards; 
+export default Cards;
